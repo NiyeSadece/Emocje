@@ -44,7 +44,7 @@ public class CollisionHandler : MonoBehaviour
         int nextSceneIndex = currentSceneIndex + 1;
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) //Starting from the begging if there is no more scenes added in build settings
         {
-            nextSceneIndex = 0;
+            nextSceneIndex = 1;
         }
         SceneManager.LoadScene(nextSceneIndex);
     }
