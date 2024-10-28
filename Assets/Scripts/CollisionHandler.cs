@@ -41,12 +41,26 @@ public class CollisionHandler : MonoBehaviour
     private void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) //Starting from the begging if there is no more scenes added in build settings
+
+        // Sprawdzamy, czy jesteœmy na poziomie 1 i przenosimy do quizu
+        if (currentSceneIndex == 1)
         {
-            nextSceneIndex = 1;
+            LoadQuizScene();
         }
-        SceneManager.LoadScene(nextSceneIndex);
+        else
+        {
+            int nextSceneIndex = currentSceneIndex + 1;
+            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) // Startujemy od pocz¹tku, jeœli brak kolejnych scen
+            {
+                nextSceneIndex = 1;
+            }
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+    }
+
+    private void LoadQuizScene()
+    {
+        SceneManager.LoadScene("QuizScene"); // Upewnij siê, ¿e QuizScene jest dodany w Build Settings
     }
 
     private void ReloadLevel()

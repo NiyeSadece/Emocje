@@ -16,7 +16,11 @@ MonoBehaviour:
     m_SettingsList: []
     m_RuntimeSettings: []
   m_AssetVersion: 5
+<<<<<<< Updated upstream
   m_DefaultVolumeProfile: {fileID: 11400000, guid: 3b472570b679dd44c97db11829d36bef, type: 2}
+=======
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: 38c88ed3420db66448595a1bbe050ff4, type: 2}
+>>>>>>> Stashed changes
   m_RenderingLayerNames:
   - Default
   m_ValidRenderingLayers: 1
