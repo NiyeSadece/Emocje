@@ -9,9 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cec7a41489b7b5448be50b1033bc83d9
   - enabled: 1
-    path: Assets/Scenes/Level 1 Enviro Test.unity
-    guid: dabf1f79ce102ec4f8b4c4c7b5c7994d
+    path: Assets/Scenes/Level 1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: d90fd3ed14618e2449850d5149c39423
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: aae84458b8744c449a05f9a21312482a
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
