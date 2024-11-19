@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class QuizManager : MonoBehaviour
+public class Positive : MonoBehaviour
 {
     public TMP_Text questionText;
     public TMP_Text scoreText; // Dodaj nowy element tekstowy do wyœwietlania punktów

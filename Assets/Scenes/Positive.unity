@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.83137256}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.83137256}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -769,7 +769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 1700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741129711
@@ -944,10 +944,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele odmian
-    i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107, trzeba
-    zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-    s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
+  m_text: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107 lub
+    si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+    ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+    pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+    pozwalaj\u0105 na pokonanie strachu!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e09342c5823d5f40adb16f988391317, type: 2}
   m_sharedMaterial: {fileID: -2884667408887394861, guid: 1e09342c5823d5f40adb16f988391317, type: 2}
@@ -974,7 +975,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.05
+  m_fontSize: 46.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1067,95 +1068,126 @@ MonoBehaviour:
   m_GameObject: {fileID: 965183677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ec217d1e9cb6b4fb330bcd74472588, type: 3}
+  m_Script: {fileID: 11500000, guid: 0607e9d85d7574a4496880d1f258591f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 878311736}
+  scoreText: {fileID: 0}
   answerButtons:
   - {fileID: 526494858}
   - {fileID: 677612998}
   - {fileID: 1198736579}
   - {fileID: 1854394550}
   questions:
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
     answers:
-    - Strach
-    - "Niepok\xF3j"
-    - "Boje si\u0119"
-    - "T\u0119sknie"
-    correctAnswerIndex: 3
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
-    answers:
-    - "Z\u0142y"
-    - "Sp\u0142oszony"
-    - "L\u0119k"
-    - Obawa
-    correctAnswerIndex: 0
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
-    answers:
-    - Zaniepokojony
-    - Panika
-    - Zazdrosny
-    - Trwoga
-    correctAnswerIndex: 2
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
-    answers:
-    - "Przera\u017Cony"
-    - "Pop\u0142och"
-    - Przestraszona
-    - Chciwy
-    correctAnswerIndex: 3
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
-    answers:
-    - Wystraszona
-    - "Smuci\u0107 si\u0119"
-    - "Obawia\u0107 si\u0119"
-    - Zastraszony
+    - "Boj\u0119 si\u0119, \u017Ce potwory s\u0105 pod \u0142\xF3\u017Ckiem"
+    - "Strach to jak ma\u0142a chmurka \u2013 zaraz j\u0105 rozwiej\u0119"
+    - "Nigdy nie b\u0119d\u0119 odwa\u017Cny"
+    - "Nie dam rady, bo strach jest za du\u017Cy."
     correctAnswerIndex: 1
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
     answers:
-    - "Trz\u0105\u015B\u0107 si\u0119 ze strachu"
-    - Zgroza
-    - Zawiedziony
-    - "Ba\u0107 si\u0119 w\u0142asnego cienia"
+    - "Jak si\u0119 boj\u0119, to musz\u0119 ucieka\u0107"
+    - Strach zawsze wygrywa.
+    - "Mog\u0119 by\u0107 jak superbohater i spr\xF3bowa\u0107!"
+    - "Nic mi si\u0119 nie uda, jak si\u0119 boj\u0119"
     correctAnswerIndex: 2
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
     answers:
-    - "Dr\u017Ce\u0107 jak osika"
-    - "Niepokoi\u0107 si\u0119"
-    - "Zal\u0119kniony"
-    - Zniesmaczony
+    - "Mama m\xF3wi, \u017Ce strach to tylko my\u015Bl, kt\xF3ra zaraz minie."
+    - "Lepiej schowa\u0107 si\u0119, bo si\u0119 boj\u0119"
+    - Strach zawsze mnie pokona
+    - "Nie chc\u0119 nic robi\u0107, bo to za straszne"
+    correctAnswerIndex: 0
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - "Nie dam rady przez to przej\u015B\u0107."
+    - "Jak si\u0119 boj\u0119, to jestem s\u0142aby."
+    - "Boj\u0119 si\u0119 i nic mi nie pomo\u017Ce."
+    - "Strach jest jak test, a ja mog\u0119 go zda\u0107"
     correctAnswerIndex: 3
-  - questionText: "Strach, opr\xF3cz tego \u017Ce ma wielkie oczy ma te\u017C wiele
-      odmian i stopnie. \u017Beby je odr\xF3\u017Ania\u0107 i o strachu rozmawia\u0107,
-      trzeba zna\u0107 jak nawi\u0119cej s\u0142\xF3w kt\xF3re go opisuj\u0105. Wska\u017C
-      s\u0142owa kt\xF3re NIE OPISUJ\u0104 strachu."
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
     answers:
-    - Wystraszona
-    - "Wstydzi\u0107 si\u0119"
-    - "Obawia\u0107 si\u0119"
-    - Zastraszony
+    - "Boj\u0119 si\u0119, wi\u0119c na pewno co\u015B z\u0142ego si\u0119 stanie"
+    - "Zawsze b\u0119d\u0119 si\u0119 ba\u0107."
+    - "Lepiej nie i\u015B\u0107 tam, bo to straszne"
+    - "Jak spr\xF3buj\u0119, to mo\u017Ce strach zniknie!"
+    correctAnswerIndex: 3
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - "Strach to co\u015B, co mnie zawsze zatrzyma"
+    - "Nie ma sensu nic robi\u0107, jak si\u0119 boj\u0119"
+    - "Mog\u0119 oddycha\u0107 g\u0142\u0119boko i strach b\u0119dzie mniejszy"
+    - "Jak si\u0119 boj\u0119, to znaczy, \u017Ce jestem s\u0142aby"
+    correctAnswerIndex: 2
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - "Strach zawsze mnie z\u0142apie."
+    - "Nie ma co pr\xF3bowa\u0107, jak jest strasznie"
+    - "Jak spr\xF3buj\u0119, to mog\u0119 by\u0107 odwa\u017Cny!"
+    - "Boj\u0119 si\u0119 i ju\u017C nic z tym nie zrobi\u0119."
+    correctAnswerIndex: 2
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - "Ka\u017Cdy czasem si\u0119 boi, ale mo\u017Cna to pokona\u0107."
+    - "Nic mi nie pomo\u017Ce, jak si\u0119 boj\u0119"
+    - "Strach to jak pu\u0142apka, nie mog\u0119 z niej wyj\u015B\u0107."
+    - Strach zawsze wygra
+    correctAnswerIndex: 0
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - "Jak si\u0119 boj\u0119, mog\u0119 poprosi\u0107 kogo\u015B o pomoc"
+    - "Nie poradz\u0119 sobie, bo strach jest za silny."
+    - "Lepiej si\u0119 podda\u0107, jak si\u0119 boj\u0119."
+    - "Nie wyjd\u0119 z pokoju, bo strach jest za du\u017Cy."
+    correctAnswerIndex: 0
+  - questionText: "Strach jest jak ma\u0142y stworek kt\xF3rego mo\u017Cemy karmi\u0107
+      lub si\u0119 z nim mierzy\u0107 i bardzo cz\u0119sto wydaje si\u0119 wi\u0119kszy
+      ni\u017C w rzeczywisto\u015Bci jest. Pozytywne my\u015Blenie i wiara w siebie
+      pozwalaj\u0105 go przezwyci\u0119\u017Cy\u0107. Wybierz te my\u015Bli kt\xF3re
+      pozwalaj\u0105 na pokonanie strachu!"
+    answers:
+    - Strach to koniec wszystkiego
+    - "Mo\u017Ce by\u0107 strasznie, ale dam rad\u0119 spr\xF3bowa\u0107!"
+    - "Nie chc\u0119 pr\xF3bowa\u0107, bo strach wygra."
+    - "Nie ma co walczy\u0107, strach zawsze wygrywa"
     correctAnswerIndex: 1
 --- !u!1 &996741755
 GameObject:
@@ -1457,7 +1489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.827451}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1925,7 +1957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.83137256}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2143,7 +2175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 976997222c25f6945a262cc79d8cce13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 632dab146c56aff4383ec14b654f51e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
