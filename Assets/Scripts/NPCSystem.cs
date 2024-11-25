@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCSystem : MonoBehaviour
-{
+{ 
     bool playerDetected = false;
 
     // Update is called once per frame
