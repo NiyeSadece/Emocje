@@ -12,6 +12,8 @@ public class NPCSystem : MonoBehaviour
         if (playerDetected && Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Dialogue started");
+            var actor = GetComponent<Actor>();
+            actor.SpeakTo();
         }
     }
 

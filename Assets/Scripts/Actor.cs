@@ -7,13 +7,6 @@ public class Actor : MonoBehaviour
     public string Name;
     public Dialogue Dialogue;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            SpeakTo();
-        }
-    }
 
     // Trigger dialogue for this actor
     public void SpeakTo()
