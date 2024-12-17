@@ -10,8 +10,19 @@ public class ChapterTextController : MonoBehaviour
     public float displayDuration = 3f; // Czas wyœwietlania tekstu
     public float fadeDuration = 2f; // Czas zanikania
 
+    public Canvas canvas; // Odniesienie do Canvasu (który zawiera t³o i tekst)
+
     private void Start()
     {
+        // Pobierz Canvas z obiektu, do którego przypisany jest skrypt
+        canvas = GetComponent<Canvas>();
+
+        // Upewnij siê, ¿e Canvas jest aktywowany, jeœli nie jest widoczny
+        if (canvas != null && !canvas.isActiveAndEnabled)
+        {
+            canvas.gameObject.SetActive(true); // Aktywujemy Canvas, jeœli nie jest aktywny
+        }
+
         // Ustaw pe³n¹ widocznoœæ tekstu i t³a na starcie
         SetAlpha(1f);
 
