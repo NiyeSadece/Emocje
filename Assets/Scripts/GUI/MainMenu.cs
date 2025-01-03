@@ -11,4 +11,10 @@ public class MainMenu : MonoBehaviour
         int nextSceneIndex = currentSceneIndex + 1;
         SceneManager.LoadSceneAsync(nextSceneIndex);
     }
+
+    public void LoadPractiseMenu()
+    {
+        SceneManager.LoadSceneAsync("PractiseMenu");
+    }
+
 }
