@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d898b6f70de19764ba4afa81e8147961
+guid: 0a713a684faa4d647878da660db5ec7c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat16
-    second: {fileID: 2100000, guid: 36a381f184d8b9143aa1c71b0b8b0f0d, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: ee5f11ca8320bc34fb599dc5240533ca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: mat17
-    second: {fileID: 2100000, guid: c7212e4ba03ab7c41a0859fc2b0f6a1f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mat9
-    second: {fileID: 2100000, guid: 5e508721e6cdb9a47adaccf879b85c19, type: 2}
+      name: Strach
+    second: {fileID: 2100000, guid: 748c7637917ccb94595201b55ad4a85c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

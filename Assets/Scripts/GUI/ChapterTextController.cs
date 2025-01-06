@@ -11,6 +11,9 @@ public class ChapterTextController : MonoBehaviour
     public float fadeDuration = 2f; // Czas zanikania
 
     public Canvas canvas; // Odniesienie do Canvasu (który zawiera t³o i tekst)
+    public Canvas instructionCanvas; // Odniesienie do Canvasu z instrukcj¹
+    public Button continueButton; // Przycisk "Dalej"
+    public Player player; // Odniesienie do obiektu gracza
 
     private void Start()
     {
@@ -26,6 +29,17 @@ public class ChapterTextController : MonoBehaviour
         // Ustaw pe³n¹ widocznoœæ tekstu i t³a na starcie
         SetAlpha(1f);
 
+        // Zablokuj ruch gracza
+        if (player != null)
+        {
+            player.SetMovable(false);
+        }
+
+        // Upewnij siê, ¿e drugi Canvas jest wy³¹czony na starcie
+        if (instructionCanvas != null)
+        {
+            instructionCanvas.gameObject.SetActive(false);
+        }
         // Rozpocznij korutynê zanikania
         StartCoroutine(FadeOut());
     }
@@ -67,17 +81,51 @@ public class ChapterTextController : MonoBehaviour
         // Upewniamy siê, ¿e na koñcu alfa jest równe 0
         SetAlpha(0f);
 
-        // Wy³¹czamy elementy po zanikniêciu
-        chapterText.gameObject.SetActive(false);
-        background.gameObject.SetActive(false);
+        // Wy³¹czamy pierwszy Canvas
+        canvas.gameObject.SetActive(false);
 
         // Rozpocznij rozgrywkê po zaniku
         StartGameplay();
+
+        // Aktywuj drugi Canvas
+        ShowInstructionCanvas();
+
     }
 
     private void StartGameplay()
     {
         // Logika rozpoczêcia gry, np. odblokowanie ruchu gracza, rozpoczêcie czasu itp.
         Debug.Log("Rozpoczynamy grê!");
+    }
+
+    private void ShowInstructionCanvas()
+    {
+        if (instructionCanvas != null)
+        {
+            instructionCanvas.gameObject.SetActive(true);
+            Debug.Log("Pokazano instrukcjê.");
+        }
+
+        if (continueButton != null)
+        {
+            continueButton.onClick.AddListener(OnContinue);
+        }
+    }
+
+    private void OnContinue()
+    {
+        // Ukryj Canvas z instrukcj¹
+        if (instructionCanvas != null)
+        {
+            instructionCanvas.gameObject.SetActive(false);
+        }
+
+        // Odblokuj ruch gracza
+        if (player != null)
+        {
+            player.SetMovable(true);
+        }
+
+        Debug.Log("Rozpoczêto rozgrywkê.");
     }
 }

@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     private Animator animator;
     private Rigidbody rb;
 
+    private bool isMovable = false; // Czy gracz mo¿e siê poruszaæ (domyœlnie zablokowany)
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +23,20 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isMovable) // Jeœli ruch jest zablokowany, wyjdŸ z metody
+        {
+            rb.velocity = new Vector3(0f, rb.velocity.y, 0f); // Zatrzymaj ruch w osi X
+            animator.SetFloat("Speed", 0f); // Ustaw animacjê na brak ruchu
+            return;
+        }
+
         // Sprawdzanie, czy `Shift` jest wciœniêty
         bool isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
         float currentSpeed = isRunning ? runSpeed : walkSpeed;
 
         // Ruch w osi X
-        float horizontalInput = Input.GetAxis("Horizontal");  // Wartoœci -1 dla "A", 1 dla "D"
-        Vector3 velocity = new Vector3(horizontalInput * currentSpeed, rb.velocity.y, 0f);  // Ruch po osi X
+        float horizontalInput = Input.GetAxis("Horizontal"); // Wartoœci -1 dla "A", 1 dla "D"
+        Vector3 velocity = new Vector3(horizontalInput * currentSpeed, rb.velocity.y, 0f); // Ruch po osi X
 
         // Zastosowanie prêdkoœci do Rigidbody
         rb.velocity = velocity;
@@ -40,17 +49,23 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0f);  // Dodajemy prêdkoœæ w osi Y
-            animator.SetTrigger("Jump");  // Wywo³anie animacji skoku (jeœli jest ustawiona)
+
         }
 
         // Obracanie postaci w zale¿noœci od kierunku
         if (horizontalInput > 0)
         {
-            transform.rotation = Quaternion.Euler(0f, 90f, 0f);  // Obrót w prawo
+            transform.rotation = Quaternion.Euler(0f, 90f, 0f); // Obrót w prawo
         }
         else if (horizontalInput < 0)
         {
-            transform.rotation = Quaternion.Euler(0f, -90f, 0f);  // Obrót w lewo
+            transform.rotation = Quaternion.Euler(0f, -90f, 0f); // Obrót w lewo
         }
+    }
+
+    // Ustawia mo¿liwoœæ poruszania siê gracza
+    public void SetMovable(bool value)
+    {
+        isMovable = value;
     }
 }
