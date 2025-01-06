@@ -992,7 +992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257264736}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3670,7 +3670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1208713608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6139,6 +6139,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 257264736}
     m_Modifications:
+    - target: {fileID: 580417756481300946, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 580417756481300946, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 580417756481300946, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 714313916350425049, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 714313916350425049, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 952730704227583560, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281715492369066013, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2811300429576208707, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6220,16 +6248,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 82eabd7903d7df740884a770dbccfd1e, type: 2}
+    - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -736221931757069924, guid: 82eabd7903d7df740884a770dbccfd1e, type: 2}
+    - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695408405294840799, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 7191480389958217663, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b313aa26b9c2f624eb26b2a976bf3225, type: 3}
+    - target: {fileID: 7191480389958217663, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191480389958217663, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191480389958217663, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112183724029772271, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8112183724029772271, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8507897970738317771, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
       propertyPath: m_Name
       value: CollectedBerries
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507897970738317771, guid: f2c85ec548ab231458ed5bd54ee3e659, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
