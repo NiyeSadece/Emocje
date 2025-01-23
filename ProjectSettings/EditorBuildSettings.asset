@@ -6,20 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Gameplay/Final/AnimationIntro.unity
-    guid: f62e00b9fa9088947ad8880c45a75044
-  - enabled: 1
     path: Assets/Scenes/Ekrany/MainMenu.unity
     guid: cec7a41489b7b5448be50b1033bc83d9
   - enabled: 1
+    path: Assets/Scenes/Gameplay/Final/AnimationIntro.unity
+    guid: f62e00b9fa9088947ad8880c45a75044
+  - enabled: 1
     path: Assets/Scenes/Gameplay/Final/Level 1.unity
     guid: dabf1f79ce102ec4f8b4c4c7b5c7994d
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Test/Level 1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Quizy/QuizScene_1.unity
     guid: d90fd3ed14618e2449850d5149c39423
   - enabled: 1
     path: Assets/Scenes/Gameplay/Final/Level 2.unity
-    guid: 4d5fb05b259276344b154573da32e676
+    guid: aae84458b8744c449a05f9a21312482a
   - enabled: 1
     path: Assets/Scenes/Quizy/QuizScene_2.unity
     guid: 77e79eba7a970db4494b3ef5821eff84

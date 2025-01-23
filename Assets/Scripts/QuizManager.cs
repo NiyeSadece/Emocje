@@ -27,7 +27,8 @@ public class QuizManager : MonoBehaviour
         // SprawdŸ, czy quiz siê zakoñczy³ i czeka na wciœniêcie spacji
         if (quizFinished && Input.GetKeyDown(KeyCode.Space))
         {
-            LoadNextLevel();
+            // PrzejdŸ do nastêpnego poziomu
+            SceneManager.LoadScene(3); // Za³aduj poziom 2, zak³adaj¹c, ¿e ma indeks 3
         }
     }
 
@@ -84,26 +85,4 @@ public class QuizManager : MonoBehaviour
         // Ustaw flagê zakoñczenia quizu
         quizFinished = true;
     }
-
-    private void LoadNextLevel()
-    {
-        // Pobierz indeks aktualnej sceny
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        // Oblicz indeks kolejnej sceny
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        // SprawdŸ, czy indeks kolejnej sceny istnieje w Build Settings
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            // Za³aduj kolejn¹ scenê
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.Log("No more levels available. Returning to main menu.");
-            SceneManager.LoadScene(1);
-        }
-    }
-
 }

@@ -1,16 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform player; // Referencja do gracza
-    public Vector3 offset;   // Offset kamery wzglêdem gracza
+    public Transform player; // Gracz
+    public Vector3 offset;   // Odleg³oœæ kamery od gracza
 
-    void LateUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        // Ustawienie pozycji kamery: poruszanie w osi X i Y, zablokowanie osi Z
-        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
+        // Ustawienie pozycji kamery na pozycjê gracza + offset
+        transform.position = new Vector3(player.position.x + offset.x, transform.position.y, player.position.z + offset.z);
 
-        // Zachowanie sta³ej rotacji kamery (opcjonalne)
-        transform.rotation = Quaternion.identity; // Zerowanie rotacji kamery
+        // Kamera nie obraca siê razem z graczem
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }
