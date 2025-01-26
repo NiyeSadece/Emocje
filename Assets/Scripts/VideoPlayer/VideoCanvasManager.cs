@@ -73,7 +73,7 @@ public class VideoCanvasManager : MonoBehaviour
 
         if (buttonsCanvas != null)
         {
-            buttonsCanvas.SetActive(false); // Ukrycie Canvasu z UI
+            buttonsCanvas.SetActive(false);
         }
 
         // Uruchomienie timera do pokazania drugiego Canvasu
@@ -87,7 +87,7 @@ public class VideoCanvasManager : MonoBehaviour
     {
         if (secondCanvas != null)
         {
-            secondCanvas.SetActive(true); // Pokazanie drugiego Canvasu
+            secondCanvas.SetActive(true); 
         }
 
         secondCanvasShown = true; // Zapobiega wielokrotnemu wywo³aniu
@@ -101,9 +101,9 @@ public class VideoCanvasManager : MonoBehaviour
     }
 
     // Funkcja przypisana do drugiego przycisku (powrót do menu g³ównego)
-    public void ReturnToPreviousScene()
+    public void ExitGame()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex - 1); // £adowanie poprzedniej sceny
+        Debug.Log("Gra zosta³a zamkniêta.");
+        Application.Quit(); // Wyjœcie z aplikacji
     }
 }

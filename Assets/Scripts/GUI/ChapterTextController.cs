@@ -1,45 +1,49 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI; // Potrzebne do Image dla t³a
-using TMPro; // Potrzebne do TextMeshPro
+using UnityEngine.UI;
+using TMPro;
 
 public class ChapterTextController : MonoBehaviour
 {
-    public TextMeshProUGUI chapterText; // Odniesienie do tekstu TMP
-    public Image background; // Odniesienie do t³a (Image)
-    public float displayDuration = 3f; // Czas wyœwietlania tekstu
-    public float fadeDuration = 2f; // Czas zanikania
+    public TextMeshProUGUI chapterText;
+    public Image background;
+    public float displayDuration = 3f;
+    public float fadeDuration = 2f;
 
-    public Canvas canvas; // Odniesienie do Canvasu (który zawiera t³o i tekst)
-    public Canvas instructionCanvas; // Odniesienie do Canvasu z instrukcj¹
-    public Button continueButton; // Przycisk "Dalej"
-    public Player player; // Odniesienie do obiektu gracza
+    public Canvas titleCanvas; // Pierwszy Canvas (Tytu³ poziomu)
+    public Canvas goalCanvas; // Drugi Canvas (Cel poziomu)
+    public Canvas movementInstructionCanvas; // Trzeci Canvas (Instrukcja sterowania)
+    public Button continueGoalButton; // Przycisk w celu poziomu
+    public Button continueButton; // Przycisk w instrukcji sterowania
+    public Player player;
 
     private void Start()
     {
-        // Pobierz Canvas z obiektu, do którego przypisany jest skrypt
-        canvas = GetComponent<Canvas>();
-
-        // Upewnij siê, ¿e Canvas jest aktywowany, jeœli nie jest widoczny
-        if (canvas != null && !canvas.isActiveAndEnabled)
+        // Upewnij siê, ¿e pierwszy Canvas (Tytu³ poziomu) jest aktywowany na pocz¹tku
+        if (titleCanvas != null && !titleCanvas.isActiveAndEnabled)
         {
-            canvas.gameObject.SetActive(true); // Aktywujemy Canvas, jeœli nie jest aktywny
+            titleCanvas.gameObject.SetActive(true);
         }
 
-        // Ustaw pe³n¹ widocznoœæ tekstu i t³a na starcie
+        // Ukryj inne canvasy na pocz¹tku gry
+        if (goalCanvas != null)
+        {
+            goalCanvas.gameObject.SetActive(false);
+        }
+
+        if (movementInstructionCanvas != null)
+        {
+            movementInstructionCanvas.gameObject.SetActive(false);
+        }
+
         SetAlpha(1f);
 
-        // Zablokuj ruch gracza
+        // Zablokuj ruch gracza na czas intro
         if (player != null)
         {
             player.SetMovable(false);
         }
 
-        // Upewnij siê, ¿e drugi Canvas jest wy³¹czony na starcie
-        if (instructionCanvas != null)
-        {
-            instructionCanvas.gameObject.SetActive(false);
-        }
         // Rozpocznij korutynê zanikania
         StartCoroutine(FadeOut());
     }
@@ -50,75 +54,55 @@ public class ChapterTextController : MonoBehaviour
         Color textColor = chapterText.color;
         Color backgroundColor = background.color;
 
-        // Ustawiamy alfa dla tekstu
         chapterText.color = new Color(textColor.r, textColor.g, textColor.b, alpha);
-
-        // Ustawiamy alfa dla t³a
         background.color = new Color(backgroundColor.r, backgroundColor.g, backgroundColor.b, alpha);
     }
 
     private IEnumerator FadeOut()
     {
-        // Poczekaj, a¿ minie czas wyœwietlania
+        // Poczekaj, a¿ minie czas wyœwietlania tytu³u
         yield return new WaitForSeconds(displayDuration);
 
         float elapsedTime = 0f;
 
-        // Zanikanie tekstu i t³a
+        // Zanikanie tytu³u
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
-
-            // Obliczamy now¹ wartoœæ alfa w oparciu o czas, aby oba elementy zanika³y w tym samym tempie
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
-
-            // Ustawiamy tê sam¹ wartoœæ alfa dla tekstu i t³a
             SetAlpha(alpha);
-
-            yield return null; // Czekaj do nastêpnej klatki
+            yield return null;
         }
 
-        // Upewniamy siê, ¿e na koñcu alfa jest równe 0
         SetAlpha(0f);
+        titleCanvas.gameObject.SetActive(false); // Wy³¹cz tytu³
 
-        // Wy³¹czamy pierwszy Canvas
-        canvas.gameObject.SetActive(false);
-
-        // Rozpocznij rozgrywkê po zaniku
-        StartGameplay();
-
-        // Aktywuj drugi Canvas
-        ShowInstructionCanvas();
-
+        // Rozpocznij wyœwietlanie celu poziomu
+        ShowGoalCanvas();
     }
 
-    private void StartGameplay()
+    private void ShowGoalCanvas()
     {
-        // Logika rozpoczêcia gry, np. odblokowanie ruchu gracza, rozpoczêcie czasu itp.
-        Debug.Log("Rozpoczynamy grê!");
-    }
-
-    private void ShowInstructionCanvas()
-    {
-        if (instructionCanvas != null)
+        if (goalCanvas != null)
         {
-            instructionCanvas.gameObject.SetActive(true);
-            Debug.Log("Pokazano instrukcjê.");
+            goalCanvas.gameObject.SetActive(true);
         }
 
-        if (continueButton != null)
+        // Pod³¹cz funkcjê do przycisku kontynuacji w celu przejœcia do nastêpnego canvasu
+        if (continueGoalButton != null)
         {
-            continueButton.onClick.AddListener(OnContinue);
+            continueGoalButton.onClick.AddListener(OnContinueGoalButtonClicked);
         }
     }
 
-    private void OnContinue()
+    private void OnContinueGoalButtonClicked()
     {
-        // Ukryj Canvas z instrukcj¹
-        if (instructionCanvas != null)
+        // Ukryj Canvas z celem
+        if (goalCanvas != null)
         {
-            instructionCanvas.gameObject.SetActive(false);
+            goalCanvas.gameObject.SetActive(false);
         }
+
 
         // Odblokuj ruch gracza
         if (player != null)
@@ -127,5 +111,33 @@ public class ChapterTextController : MonoBehaviour
         }
 
         Debug.Log("Rozpoczêto rozgrywkê.");
+
+        // Poka¿ instrukcjê sterowania
+        ShowMovementInstructionCanvas();
+    }
+
+    private void ShowMovementInstructionCanvas()
+    {
+        // Poka¿ canvas z instrukcj¹ sterowania
+        if (movementInstructionCanvas != null)
+        {
+            movementInstructionCanvas.gameObject.SetActive(true);
+        }
+
+        // Pod³¹cz funkcjê do przycisku "kontynuuj"
+        if (continueButton != null)
+        {
+            continueButton.onClick.AddListener(OnContinue);
+        }
+    }
+
+    private void OnContinue()
+    {
+        // Ukryj wszystkie instrukcje
+        if (movementInstructionCanvas != null)
+        {
+            movementInstructionCanvas.gameObject.SetActive(false);
+        }
+
     }
 }

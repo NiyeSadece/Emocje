@@ -428,7 +428,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1131244346}
         m_TargetAssemblyTypeName: VideoCanvasManager, Assembly-CSharp
-        m_MethodName: ReturnToPreviousScene
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
