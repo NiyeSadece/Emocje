@@ -396,6 +396,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8359331823674411188, guid: 24aa3f73ff25e454eaa302aa66c8aab5, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359331823674411188, guid: 24aa3f73ff25e454eaa302aa66c8aab5, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359331823674411188, guid: 24aa3f73ff25e454eaa302aa66c8aab5, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 10880
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2011,7 +2023,7 @@ Transform:
   m_GameObject: {fileID: 725089089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36, y: 105, z: 3.22}
+  m_LocalPosition: {x: 2.36, y: 108, z: 3.22}
   m_LocalScale: {x: 267.25095, y: 4.168837, z: 28.796259}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3119,6 +3131,7 @@ GameObject:
   - component: {fileID: 1035524627}
   - component: {fileID: 1035524626}
   - component: {fileID: 1035524625}
+  - component: {fileID: 1035524628}
   m_Layer: 0
   m_Name: BreathZone1
   m_TagString: BreathZone1
@@ -3139,7 +3152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breathBarUI: {fileID: 412521047}
-  breathController: {fileID: 1595644795}
+  breathController: {fileID: 1227512744}
   breathZoneIndex: 1
 --- !u!65 &1035524626
 BoxCollider:
@@ -3177,6 +3190,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1035524628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035524622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b04346cfe4baad4ca1e3e8210d7f4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoneIndex: 1
+  fearTextManager: {fileID: 1707380526}
 --- !u!1001 &1039996838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3481,7 +3508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breathBarUI: {fileID: 412521047}
-  breathController: {fileID: 1595644795}
+  breathController: {fileID: 1227512744}
   breathZoneIndex: 0
 --- !u!65 &1060927299
 BoxCollider:
@@ -4208,6 +4235,54 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 571154333}
   m_SourcePrefab: {fileID: 100100000, guid: d898b6f70de19764ba4afa81e8147961, type: 3}
+--- !u!1 &1227512743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227512745}
+  - component: {fileID: 1227512744}
+  m_Layer: 0
+  m_Name: BreathController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1227512744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227512743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024bdbe5cdb2cc141b45fd8ef9e552fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breathBar: {fileID: 412521049}
+  fillSpeed: 0.5
+  breathZoneIndex: 0
+  fearTextManager: {fileID: 1707380526}
+--- !u!4 &1227512745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227512743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5852213, y: 6.2064214, z: -0.0027455986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1235771512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5031,27 +5106,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d898b6f70de19764ba4afa81e8147961, type: 3}
   m_PrefabInstance: {fileID: 1362515604}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1595644792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7509214686414710319, guid: e78c0b253c0a14b49b9523eeb7b36069, type: 3}
-  m_PrefabInstance: {fileID: 5135273388053112995}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1595644795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595644792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024bdbe5cdb2cc141b45fd8ef9e552fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breathBar: {fileID: 412521049}
-  fillSpeed: 0.5
-  breathZoneIndex: 0
-  fearTextManager: {fileID: 1707380526}
 --- !u!1 &1597836563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,11 +5209,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Strach ma wielkie oczy, ale czy potrafisz go rozpozna\u0107? \n\nNa ekranie
-    zobaczysz r\xF3\u017Cne s\u0142owa \u2013 niekt\xF3re opisuj\u0105 strach, a
-    inne nie. \n\nTWOJE ZADANIE TO ROZPOZNA\u0106, KT\xD3RE Z TYCH S\u0141\xD3W KOJARZ\u0104
-    SI\u0118 ZE STRACHEM.\n\nZa ka\u017Cde poprawne wskazanie zdob\u0119dziesz 5
-    punkt\xF3w!\n\nB\u0105d\u017A czujny i baw si\u0119 dobrze!"
+  m_text: "Strach potrafi nas zatrzyma\u0107, ale g\u0142\u0119boki oddech mo\u017Ce
+    pom\xF3c go opanowa\u0107.\r\n\r\nNa ekranie pojawi si\u0119 pasek oddechu, a
+    wraz z nim sytuacje, kt\xF3re mog\u0105 wywo\u0142ywa\u0107 strach.  \n\nTWOJE
+    ZADANIE TO WYPE\u0141NI\u0106 PASEK, PRZYTRZYMUJ\u0104C KLAWISZ \"W\".\r\n\r\nOddychaj
+    spokojnie i dok\u0142adnie \u2013 kiedy pasek si\u0119 zape\u0142ni, przezwyci\u0119\u017Cysz
+    strach i zdob\u0119dziesz nagrod\u0119 w postaci 10 punkt\xF3w!\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9546ee1c414044b0de089ff27045e, type: 2}
   m_sharedMaterial: {fileID: -6574976452467501990, guid: 55d9546ee1c414044b0de089ff27045e, type: 2}
@@ -5311,7 +5366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1673158024
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7867,10 +7922,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7509214686414710319, guid: e78c0b253c0a14b49b9523eeb7b36069, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1595644795}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78c0b253c0a14b49b9523eeb7b36069, type: 3}
 --- !u!1001 &8274245948352406782
 PrefabInstance:
@@ -7962,3 +8014,4 @@ SceneRoots:
   - {fileID: 306195529}
   - {fileID: 1060927300}
   - {fileID: 1035524627}
+  - {fileID: 1227512745}

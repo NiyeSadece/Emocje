@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BreathZoneTrigger : MonoBehaviour
 {
-    public GameObject breathBarUI; // Pasek oddechu
+    public GameObject breathBarUI;
     public BreathController breathController; // Referencja do BreathController
     public int breathZoneIndex; // Indeks BreathZone
 

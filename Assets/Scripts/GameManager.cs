@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Dodaj, aby obs³ugiwaæ zmiany scen
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,12 +13,12 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Zachowaj GameManager miêdzy scenami
+            DontDestroyOnLoad(gameObject);
 
         }
         else if (instance != this)
         {
-            Destroy(gameObject); // Usuñ duplikaty
+            Destroy(gameObject);
         }
     }
 

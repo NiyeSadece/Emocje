@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
   RootNode:
-    dialogueText: abc
+    dialogueText: "\u015Awietnie Ci idzie! Pozna\u0142e\u015B ju\u017C pierwsze s\u0142owa
+      pod kt\xF3rymi mog\u0119 si\u0119 kry\u0107. Musisz  jednak by\u0107 czujny
+      by nie pomyli\u0107 mnie z innymi emocjami, takimi jak Smutek czy Zazdro\u015B\u0107.
+      Zwr\xF3\u0107 uwag\u0119 na kolejne przeszkody! Powodzenia!"
     responses:
-    - responseText: xyz
+    - responseText: "Dzi\u0119kuj\u0119"
       nextNode:
         dialogueText: 
         responses: []

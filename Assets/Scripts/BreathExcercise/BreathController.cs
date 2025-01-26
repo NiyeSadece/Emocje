@@ -19,6 +19,13 @@ public class BreathController : MonoBehaviour
     {
         if (breathBar.gameObject.activeSelf) // Sprawdzamy, czy pasek jest aktywny
         {
+            if (!breathBar.gameObject.activeSelf)
+            {
+                Debug.Log("BreathBar is not active in Update.");
+                return;
+            }
+
+
             Debug.Log("Update dzia³a w BreathController"); // TES
             // Wciœniêcie klawisza "W" zaczyna wdech
             if (Input.GetKey(KeyCode.W) && !breathCompleted)
@@ -72,11 +79,13 @@ public class BreathController : MonoBehaviour
     // Funkcja uruchamiaj¹ca BreathZone
     public void ActivateBreathZone()
     {
+        Debug.Log("ActivateBreathZone called. Resetting state.");
         if (breathBar != null)
         {
             breathBar.gameObject.SetActive(true); // Poka¿ pasek, gdy BreathZone jest aktywna
             breathCompleted = false; // Resetujemy stan na "nieukoñczony"
             breathBar.value = 0; // Resetujemy wartoœæ paska
+            isFilling = false; // Pasek nie jest wype³niany
         }
     }
 
