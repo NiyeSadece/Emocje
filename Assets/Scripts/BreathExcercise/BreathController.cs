@@ -64,6 +64,7 @@ public class BreathController : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     void OnBreathLoaded()
     {
         // Po zakoñczeniu ³adowania paska oddechowego wywo³aj metodê w FearTextManager
@@ -71,6 +72,9 @@ public class BreathController : MonoBehaviour
         {
             fearTextManager.OnBreathLoaded(breathZoneIndex);
         }
+
+        // Przyznaj 10 jagód
+        GameManager.instance.AddBerries(20);
 
         // Ukryj pasek po zakoñczeniu ³adowania
         breathBar.gameObject.SetActive(false);

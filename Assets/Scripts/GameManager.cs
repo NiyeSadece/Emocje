@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,4 +47,19 @@ public class GameManager : MonoBehaviour
             Debug.Log("Reset BreathController in scene: " + scene.name);
         }
     }
+
+    [System.Obsolete]
+    public void AddBerries(int amount)
+    {
+        NumberOfBerries += amount;
+        FindObjectOfType<BerriesUI>().UpdateBerriesText();
+    }
+
+    public void DeleteBerries(int amount)
+    {
+        NumberOfBerries -= amount;
+        NumberOfBerries = Mathf.Max(0, NumberOfBerries);
+        FindObjectOfType<BerriesUI>().UpdateBerriesText();
+    }
+
 }

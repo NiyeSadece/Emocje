@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro; // TextMeshPro
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BreathingExercise : MonoBehaviour
 {
@@ -75,6 +76,33 @@ public class BreathingExercise : MonoBehaviour
                     }
                 }
             }
+        }
+
+        // Przejœcie do nastêpnego poziomu po zakoñczeniu æwiczenia oddechowego
+        if (currentState == State.Complete && Input.GetKeyDown(KeyCode.Space))
+        {
+            LoadNextLevel();
+        }
+
+    }
+
+    private void LoadNextLevel()
+    {
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        // SprawdŸ, czy indeks kolejnej sceny istnieje w Build Settings
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            // Za³aduj kolejn¹ scenê
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("No more levels available. Returning to main menu.");
+            SceneManager.LoadScene(1);
         }
     }
 

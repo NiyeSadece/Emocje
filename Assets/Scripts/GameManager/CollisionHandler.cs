@@ -3,8 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [Header("Quiz Scenes")]
-    public string[] quizScenes; // Tablica nazw scen quizowych (np. ["QuizScene_1", "QuizScene_2", "QuizScene_3"])
+
+    public string quizSceneName; 
+
+
 
     private void OnCollisionEnter(Collision other)
     {
@@ -77,18 +79,17 @@ public class CollisionHandler : MonoBehaviour
         // Indeks aktualnej sceny
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        // Obliczamy indeks quizu na podstawie indeksu poziomu w Build Settings
-        int levelOffset = 2; // Indeks Level 1 w Build Settings
-        int quizIndex = currentSceneIndex - levelOffset; // Dopasowanie do tablicy quizScenes
+        int quizIndex = currentSceneIndex +1;
 
-        if (quizIndex >= 0 && quizIndex < quizScenes.Length)
+        if (quizIndex >= 0 && quizIndex <= 7)
         {
-            string quizSceneName = quizScenes[quizIndex];
+         
             Debug.Log($"Loading quiz scene: {quizSceneName}");
             SceneManager.LoadScene(quizSceneName);
         }
         else
         {
+            Debug.LogError(quizIndex);
             Debug.LogError("Quiz scene not found or not configured properly!");
         }
     }

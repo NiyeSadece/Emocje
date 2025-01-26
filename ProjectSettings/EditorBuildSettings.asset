@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Quizy/QuizScene_2.unity
     guid: 77e79eba7a970db4494b3ef5821eff84
   - enabled: 1
+    path: Assets/Scenes/Gameplay/Final/Level 3.unity
+    guid: 119438793327aea449b94feeeff05b4b
+  - enabled: 1
     path: Assets/Scenes/Quizy/QuizScene_3.unity
     guid: 1dfe45a4ba0ca4d49a48fcb2754c3b0a
   - enabled: 1
