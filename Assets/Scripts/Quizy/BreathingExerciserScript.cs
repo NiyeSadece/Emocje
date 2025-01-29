@@ -64,7 +64,7 @@ public class BreathingExercise : MonoBehaviour
 
                     if (sequenceCount >= totalSequences)
                     {
-                        messageText.text = "Brawo, znasz ju¿ pierwsz¹ technikê radzenia sobie ze strachem. Mo¿e siê zda¿yæ ¿e strach nie zawsze ca³kowicie zniknie lecz jak widzisz mo¿esz go skutecznie zmniejszaæ";
+                        messageText.text = "Brawo, znasz ju¿ pierwsz¹ technikê radzenia sobie ze strachem. Mo¿e siê zdarzyæ ¿e strach nie zawsze ca³kowicie zniknie lecz jak widzisz mo¿esz go skutecznie zmniejszaæ";
                         currentState = State.Complete;
                     }
                     else

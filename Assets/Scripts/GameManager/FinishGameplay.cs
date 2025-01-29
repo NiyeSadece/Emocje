@@ -17,7 +17,7 @@ public class FinishGameplay : MonoBehaviour
 
         totalBerries = totalBerries / 2;
 
-        if (totalBerries < 50)
+        if (totalBerries < 70)
         {
             gameOverText.text = "Brawo, œwietnie Ci posz³o! Ale wygl¹da na to, ¿e musisz jeszcze popracowaæ nad technikami opanowania strachu.";
         }

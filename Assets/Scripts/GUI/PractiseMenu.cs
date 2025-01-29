@@ -12,16 +12,16 @@ public class PractiseMenu : MonoBehaviour
 
     public void LoadFirstQuiz()
     {
-        SceneManager.LoadSceneAsync("QuizScene_1");
+        SceneManager.LoadSceneAsync("MG_Quiz_1");
     }
 
     public void LoadSecondQuiz()
     {
-        SceneManager.LoadSceneAsync("QuizScene_2");
+        SceneManager.LoadSceneAsync("MG_Quiz_2");
     }
 
     public void LoadThirdQuiz()
     {
-        SceneManager.LoadSceneAsync("QuizScene_3");
+        SceneManager.LoadSceneAsync("MG_Quiz_3");
     }
 }
