@@ -1818,7 +1818,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -2040,7 +2041,8 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -2539,7 +2541,8 @@ PrefabInstance:
       value: "Smuci\u0107 si\u0119"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1862709749404415024, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5839234905544781677, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
@@ -4089,7 +4092,8 @@ PrefabInstance:
       value: 2.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -4778,7 +4782,8 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -5371,7 +5376,8 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -5445,7 +5451,8 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -5733,7 +5740,8 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -6481,7 +6489,8 @@ PrefabInstance:
       value: -0.83
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1862709749404415024, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5839234905544781677, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
@@ -7375,7 +7384,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -8134,7 +8144,8 @@ PrefabInstance:
       value: "Z\u0142y"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1862709749404415024, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5839234905544781677, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
@@ -8698,9 +8709,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Strach ma wielkie oczy, ale czy potrafisz go rozpozna\u0107? \n\nNa ekranie
     zobaczysz r\xF3\u017Cne s\u0142owa \u2013 niekt\xF3re opisuj\u0105 strach, a
-    inne nie. \n\nTWOJE ZADANIE TO ROZPOZNA\u0106, KT\xD3RE Z TYCH S\u0141\xD3W KOJARZ\u0104
-    SI\u0118 ZE STRACHEM.\n\nZa ka\u017Cde poprawne wskazanie zdob\u0119dziesz 5
-    punkt\xF3w!\n\nB\u0105d\u017A czujny i baw si\u0119 dobrze!"
+    inne nie. \n\nZwr\xF3\u0107 na nie uwag\u0119, bo na ko\u0144cu czeka Ci\u0119
+    mini-gra!\n\nB\u0105d\u017A czujny i baw si\u0119 dobrze!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9546ee1c414044b0de089ff27045e, type: 2}
   m_sharedMaterial: {fileID: -6574976452467501990, guid: 55d9546ee1c414044b0de089ff27045e, type: 2}
@@ -11057,7 +11067,8 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -11671,7 +11682,8 @@ PrefabInstance:
       value: "T\u0119sknie"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1862709749404415024, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5839234905544781677, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
@@ -11804,7 +11816,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7525968593458212283, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4734236141589488229, guid: f00ecec5430f25849a50d9ba1f435175, type: 3}
@@ -12286,7 +12299,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1862709749404415024, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5839234905544781677, guid: 1f666fb8aad466646b9721a3c7561421, type: 3}

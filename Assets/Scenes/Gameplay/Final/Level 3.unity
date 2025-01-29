@@ -3601,31 +3601,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 86064c765b68f0544a531a3f88479a48, type: 3}
---- !u!1 &1405535144 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8874868194920110332, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
-  m_PrefabInstance: {fileID: 571642987126662674}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1405535148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405535144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae4bf9c8d7b9f314084188dce0be6383, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2024939205}
-  offset: {x: 0, y: 1, z: -8}
 --- !u!114 &1405535149 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 221981013529470140, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
   m_PrefabInstance: {fileID: 571642987126662674}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405535144}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aead3dd098f64e4498224044f7a0af22, type: 3}
@@ -4287,7 +4268,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Na ekranie pojawi\u0105 si\u0119 przeszkody w postaci my\u015Bli, kt\xF3re
     mog\u0105 karmi\u0107 strach.\n\nTWOJE ZADANIE TO UNIKA\u0106 MY\u015ALI, KT\xD3RE
-    WZMACNIAJ\u0104 STRACH.\r\n\r\nje\u015Bli w nie uderzysz, stracisz 5 punkt\xF3w!\r\n\r\nZbieraj
+    WZMACNIAJ\u0104 STRACH.\r\n\r\nJe\u015Bli w nie uderzysz, stracisz 5 punkt\xF3w!\r\n\r\nZbieraj
     jagody, omijaj strach i baw si\u0119 dobrze!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9546ee1c414044b0de089ff27045e, type: 2}
@@ -5956,11 +5937,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed4f6526dc61bda4c9e1ffcf49ec7226, type: 3}
   m_PrefabInstance: {fileID: 628581513}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2024939205 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ed4f6526dc61bda4c9e1ffcf49ec7226, type: 3}
-  m_PrefabInstance: {fileID: 628581513}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2024939206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6066,6 +6042,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!4 &2024939213 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ed4f6526dc61bda4c9e1ffcf49ec7226, type: 3}
+  m_PrefabInstance: {fileID: 628581513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2032761945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6292,6 +6273,10 @@ PrefabInstance:
       propertyPath: pauseMenuCanvas
       value: 
       objectReference: {fileID: 516683234}
+    - target: {fileID: 1584274477971450540, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2024939213}
     - target: {fileID: 6497607046110685647, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6371,10 +6356,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8874868194920110332, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1405535148}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e0bd5c26cc97eb4db7efe727334045e, type: 3}
 --- !u!1001 &1080971672345088314
 PrefabInstance:

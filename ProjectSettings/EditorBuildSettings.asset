@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Quizy/QuizScene_3.unity
     guid: 1dfe45a4ba0ca4d49a48fcb2754c3b0a
   - enabled: 1
+    path: Assets/Scenes/Ekrany/FinishGameplay.unity
+    guid: 155af19f1696bed4b8efd89ee4dc9402
+  - enabled: 1
     path: Assets/Scenes/Ekrany/PractiseMenu.unity
     guid: d19db1a5460e90343819b95ccec93f71
   - enabled: 1
