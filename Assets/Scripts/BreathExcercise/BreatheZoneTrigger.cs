@@ -5,6 +5,7 @@ public class BreathZoneTrigger : MonoBehaviour
     public GameObject breathBarUI;
     public BreathController breathController; // Referencja do BreathController
     public int breathZoneIndex; // Indeks BreathZone
+    public FearTextManager fearTextManager; // Odwo³anie do managera tekstu
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +21,7 @@ public class BreathZoneTrigger : MonoBehaviour
             {
                 breathController.breathZoneIndex = breathZoneIndex; // Ustaw indeks strefy oddechu
                 breathController.ActivateBreathZone(); // Aktywuj BreathZone w BreathController
+                fearTextManager.OnPlayerEnterZone(breathZoneIndex);
             }
         }
     }
@@ -39,6 +41,7 @@ public class BreathZoneTrigger : MonoBehaviour
             {
                 breathController.breathZoneIndex = -1; // Resetuj indeks, jeœli chcesz, by BreathZone by³a nieaktywna
                 breathController.ResetBreathBar(); // Resetuj pasek, aby gracz nie mia³ mo¿liwoœci kontynuowania oddechu
+                fearTextManager.OnPlayerExitZone(breathZoneIndex);
             }
         }
     }
