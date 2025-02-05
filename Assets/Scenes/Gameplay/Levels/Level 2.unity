@@ -2893,6 +2893,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
+      propertyPath: fearTextManager
+      value: 
+      objectReference: {fileID: 1707380526}
+    - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: breathController
       value: 
       objectReference: {fileID: 1227512744}
@@ -3108,6 +3112,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
+      propertyPath: fearTextManager
+      value: 
+      objectReference: {fileID: 1707380526}
+    - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: breathController
       value: 
       objectReference: {fileID: 1227512744}
@@ -3309,6 +3317,10 @@ PrefabInstance:
       propertyPath: breathZoneIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
+      propertyPath: fearTextManager
+      value: 
+      objectReference: {fileID: 1707380526}
     - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: breathController
       value: 
@@ -8244,6 +8256,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 412521047}
     - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
+      propertyPath: fearTextManager
+      value: 
+      objectReference: {fileID: 1707380526}
+    - target: {fileID: 1482576018607003224, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: breathController
       value: 
       objectReference: {fileID: 1227512744}
@@ -8251,10 +8267,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreathZone0
       objectReference: {fileID: 0}
-    - target: {fileID: 5398146890198745726, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
-      propertyPath: fearTextManager
-      value: 
-      objectReference: {fileID: 1707380526}
     - target: {fileID: 8628101904359735442, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.6
@@ -8293,10 +8305,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8628101904359735442, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9131901252373360334, guid: 0162d5e0dc29acc4995a05861e2bc9c7, type: 3}
-      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8368,6 +8376,7 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 571642987126662674}
   - {fileID: 5135273388053112995}
+  - {fileID: 1227512745}
   - {fileID: 1707380527}
   - {fileID: 1709187394268825996}
   - {fileID: 1788301040}
@@ -8387,7 +8396,6 @@ SceneRoots:
   - {fileID: 1961815451}
   - {fileID: 578147586}
   - {fileID: 306195529}
-  - {fileID: 1227512745}
   - {fileID: 4027811810017395814}
   - {fileID: 904830666}
   - {fileID: 973306307}

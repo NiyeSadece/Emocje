@@ -53,15 +53,15 @@ public class ObstaclePlatform : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isHit) // Sprawdzenie, czy gracz uderzy³ w przeszkodê
+        if (other.CompareTag("Player") && !isHit)
         {
             // Odejmowanie punktów (lub jagód)
-            GameManager.instance.DeleteBerries(5); // Ustaw na 5, jeœli ma to byæ 5 punktów
+            GameManager.instance.DeleteBerries(10);
 
-            isHit = true; // Zmieniamy stan na "uderzona"
-            gameObject.SetActive(false); // Ukrywamy przeszkodê po uderzeniu
+            isHit = true; 
+            gameObject.SetActive(false);
 
-            // Wyœwietlamy komunikat o stracie punktów
+            
             messageManager.DisplayMessage("Ups! Tracisz 5 punktów!");
         }
     }
